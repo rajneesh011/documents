@@ -1,0 +1,13 @@
+What we have completed.
+Installation of: 
+  kubectl
+  ArgoCD
+  az cli 
+What we have logged in to:
+  az login with tenant ID as mentioned in the ArgoCD Install Guide shared by Soomin
+  Updated kube/.config file for the dev cluster on the local machine
+  Updated subscription ID as mentioned in the ArgoCD guide (shared by Soomin)
+ISSUE: 
+  Kubectl is not directly connecting with AKS cluster.
+BUT:
+  With the `az aks` command, I can see what pods are running inside the AKS cluster from my local machine.
