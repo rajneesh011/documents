@@ -1,0 +1,3 @@
+Till now i have done the basic setup for day to day work, and got access of git repos and azure, i have reviewed PR as per the company standard and also tried to see the services running inside the AKS cluster from azure console!!
+
+The problem which i'm facing right now is that the kubectl does not have direct access to the AKS cluster even after az login and updating the kube/.config file! for this i have tried with active VPN and also tested after changing the DNS from fortiguard to google DNS nothing worked, i might be missing any network layer ??
