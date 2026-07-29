@@ -1,0 +1,35 @@
+# Summary
+
+This PR introduces a new Ignition SIM instance (`-b`) for both the DEV and QA environments. The new instance is configured to mirror the existing deployment while using its own environment-specific configuration and secrets.
+
+## Changes Made
+
+### 1. Added a new DEV overlay
+- Created `overlays/dev-b` by duplicating the existing `overlays/dev` configuration.
+- Updated the Kustomize overlay to deploy the new Ignition SIM instance.
+- Modified resource names and labels where required to avoid conflicts with the existing instance.
+- Updated the license and client secret references to use the new `-b` secrets.
+
+### 2. Added a new QA overlay
+- Created `overlays/qa-b` from the existing `overlays/qa` configuration.
+- Applied the same configuration changes as the DEV overlay.
+- Updated the environment-specific values required for the new QA instance.
+
+### 3. Updated ArgoCD application configuration (DEV)
+- Updated `argocd/apps/helios-apps`.
+- Added a new ArgoCD Application definition for the `dev-b` overlay.
+- Configured ArgoCD to deploy and manage the new Ignition SIM instance in the DEV environment.
+
+### 4. Updated ArgoCD application configuration (QA)
+- Updated `argocd/apps/helios-apps-qa`.
+- Added a new ArgoCD Application definition for the `qa-b` overlay.
+- Configured ArgoCD to deploy and manage the new Ignition SIM instance in the QA environment.
+
+## Files/Directories Updated
+
+- `overlays/dev-b/kustomization.yaml`
+- `overlays/dev-b/secret-provider-class-license.yaml
+- `overlays/qa-b/kustomization.yaml`
+- `overlays/qa-b/secret-provider-class-license.yaml`
+- `argocd/apps/helios-apps`
+- `argocd/apps/helios-apps-qa`
