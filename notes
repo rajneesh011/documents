@@ -6,3 +6,8 @@ The problem which i'm facing right now is that the kubectl does not have direct 
 *date: 27-07-2026*
 1. kubectl connection from local machine to aks cluster has been resolved by adding  the local dns entry in the hosts file. 
 2. i have reviewed the documents on wiki (Azure devops)
+
+
+Date 28-07-2026
+1. I am reviewing ArgoCD as of now
+2. i had a talk with soomin related to PR review in last  
