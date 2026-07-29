@@ -109,30 +109,5 @@ kubectl apply -f ignition-sim-b-application.yaml
 
 Argo CD will create the new deployment.
 
----
-
-## I can guide you exactly if you share:
-
-1. The output of:
-
-```bash
-kubectl get application <app-name> -n argocd -o yaml
-```
-
-(especially the `spec.source` section)
-
-2. The repository structure, for example:
-
-```bash
-tree apps/ignition -L 3
-```
-
-or
-
-```bash
-find apps/ignition -maxdepth 3
-```
-
-3. The contents of the overlay's `kustomization.yaml`.
 
 With those, I can tell you precisely which files to copy and which values to change to create the new `ignition-sim-b` instance.
