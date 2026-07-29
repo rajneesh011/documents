@@ -1,6 +1,7 @@
 # Summary
 
-This PR introduces a new Ignition SIM instance (`-b`) for both the DEV and QA environments. The new instance is configured to mirror the existing deployment while using its own environment-specific configuration and secrets.
+This introduces a new Ignition SIM instance (`-b`) for both the DEV and QA environments. 
+The new instance is configured to mirror the existing deployment while using its own environment-specific configuration and secrets.
 
 ## Changes Made
 
