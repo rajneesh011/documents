@@ -1,0 +1,34 @@
+## Summary
+
+This PR adds the configuration required to deploy a new Ignition SIM instance to the DEV and QA environments.
+
+The new instance reuses the existing deployment configuration while introducing a separate set of license and client secret values as required.
+
+## Changes
+
+- Added a new overlay for the Ignition SIM instance.
+- Updated Kustomize configuration for the new instance.
+- Added/updated SecretProviderClass configuration for the new license secrets.
+- Configured the new Ignition license key and activation token.
+- Updated application labels/names where required to support the new instance.
+- Kept all other deployment configuration consistent with the existing Ignition SIM deployment.
+
+## Files Changed
+
+- Added new Kustomize overlay for the new Ignition SIM instance.
+- Updated `kustomization.yaml`.
+- Updated `secret-provider-class-license.yaml`.
+- Updated deployment configuration (if applicable).
+- Updated any environment-specific configuration required for DEV and QA.
+
+## Validation
+
+- Verified Kustomize build completes successfully.
+- Verified manifests are generated without errors.
+- Confirmed the new instance references the correct license and activation secrets.
+- Confirmed existing Ignition SIM configuration remains unchanged.
+
+## Notes
+
+- No functional changes to the existing Ignition SIM instance.
+- This PR only introduces configuration for the additional Ignition SIM instance.
