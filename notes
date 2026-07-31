@@ -11,3 +11,10 @@ The problem which i'm facing right now is that the kubectl does not have direct 
 Date 28-07-2026
 1. I am reviewing ArgoCD as of now
 2. i had a talk with soomin related to PR review in last  
+
+Date: 31-07-2026
+1. I was working on the ignition-sim new instance, and I have created the overlays, then stucked on 3 variable values! By today, I'll try to figure out by myself what the values could be. 
+2. Apart of this ticket i have also gone through the helios-infra repo on high level overview.
+
+
+
