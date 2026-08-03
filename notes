@@ -17,9 +17,11 @@ Date: 31-07-2026
 2. Apart of this ticket i have also gone through the helios-infra repo on high level overview.
 
 Date: 03-08-2026
-1. i have worked on reviewing the PR but i have noticed that after my comment, the PR was again reviewed by co-pilot and auto-merged!!  (maybe the other guys are not aware wbout me as an teammate)
+1. i have worked on reviewing the PR but i have noticed that after my comment, 
+   the PR was again reviewed by co-pilot and auto-merged!!  (maybe the other guys are not aware wbout me as an teammate)
 2. Currently reviewing the helios-infra repo for Terraform code review 
-3. Checked different observability tools and found a new named as RUM will check the compatibility and update soon!!
+3. Checked different observability tools and found a new tool 
+    named as RUM will check the compatibility and update soon!!
 
 
 
