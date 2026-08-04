@@ -32,3 +32,23 @@ The new instance reuses the existing deployment configuration while introducing 
 
 - No functional changes to the existing Ignition SIM instance.
 - This PR only introduces configuration for the additional Ignition SIM instance.
+
+
+-----------------------------------------------------------------------------------
+Monitor average build and deployment time
+
+"We should also monitor how long our builds and deployments take on average. If pipeline execution time starts increasing, we can investigate bottlenecks and improve developer productivity."
+
+Correlate deployments with alerts
+
+"One idea is to automatically check whether a deployment happened just before an alert was triggered. Many production issues are introduced by recent deployments, so showing this information immediately can help us find the root cause much faster instead of manually checking deployment history."
+
+ Automatic Rollback
+Roll back automatically when deployment health degrades
+
+"Instead of waiting for someone to notice a failed deployment, we can automatically roll back if certain health checks fail. For example, if the application's health check fails, error rates increase significantly, SLO burn rate spikes, or Kubernetes pods don't become ready, the system can safely revert to the previous stable version. This reduces downtime and improves customer experience."
+
+ Artifact Management
+Automatically clean up old artifacts
+
+"We should have a retention policy for build artifacts. Over time, old container images, unused artifacts, and expired releases keep accumulating and consume storage. Automatically cleaning them up will help reduce storage costs and keep our repositories organized."
