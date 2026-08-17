@@ -52,3 +52,17 @@ Roll back automatically when deployment health degrades
 Automatically clean up old artifacts
 
 "We should have a retention policy for build artifacts. Over time, old container images, unused artifacts, and expired releases keep accumulating and consume storage. Automatically cleaning them up will help reduce storage costs and keep our repositories organized."
+
+
+
+=========================================================
+
+I have completed a thorough review of our Azure Functions and identified a few areas that need attention:
+
+Some Azure Functions have not been triggered for quite some time and may require validation to confirm whether they are still in use.
+
+A few functions are missing the Owner tag. This can make it difficult to identify the right person to contact if there is a failure, issue, or blocker related to the function.
+
+Some functions do not have alerting configured, which could delay the detection of failures or other operational issues.
+
+To capture these findings, I have prepared a straightforward document outlining all the observations and recommendations
