@@ -65,4 +65,15 @@ A few functions are missing the Owner tag. This can make it difficult to identif
 
 Some functions do not have alerting configured, which could delay the detection of failures or other operational issues.
 
+
+===========================================================
+We had enabled QA in the pipeline, and the scheduled run passed successfully initially. 
+
+After some changes by QA team made in the UI test cases, the UI stage started failing from there, (.site-name was missing from Headers)
+ i have tried to look from my side and created a PR for the fixes but that again did not passed. 
+
+then i have added missing variables and tried to fix the error by adding a condition, but it didn't work, so I reverted that change. 
+I informed Arthi to fix the UI test case because the site name is missing in the header.
+I also asked her to check and fix any other header-related issues
+
 To capture these findings, I have prepared a straightforward document outlining all the observations and recommendations
